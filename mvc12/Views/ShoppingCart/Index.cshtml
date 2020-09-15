@@ -1,0 +1,20 @@
+﻿@model muscshop.ViewModel.ShoppingCartViewModel
+
+<div>
+    <h4>ShoppingCartViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CartTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CartTotal)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
